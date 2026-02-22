@@ -1,5 +1,5 @@
 plugins {
-    kotlin("jvm") version "1.9.0"
+    kotlin("jvm") version "2.1.10"
     application
 }
 
@@ -12,6 +12,8 @@ repositories {
 
 dependencies {
     testImplementation(kotlin("test"))
+    implementation("com.github.doyaaaaaken:kotlin-csv-jvm:1.9.3")
+    implementation("org.jfree:jfreechart:1.5.6")
     implementation("com.github.javafaker:javafaker:1.0.2")
 }
 
@@ -20,7 +22,7 @@ tasks.test {
 }
 
 kotlin {
-    jvmToolchain(8)
+    jvmToolchain(21)
 }
 
 application {
